@@ -6,8 +6,8 @@ import 'package:instagram_ui_clone/widget/userPost.dart';
 class HomeScreen extends StatelessWidget {
    HomeScreen({Key? key}) : super(key: key);
 
-   var userName=["Hikayen","cagadalga","adematiciii","kimsesiz...","kaan.onerx","fastdrivers_","webtekno",];
-   var profilePicture=["kadir.jpeg","çağatay.jpeg","adem.jpeg","ömer.jpeg","kaan.jpeg","fastdriver.jpeg","webtekno.jpeg",];
+   var userName=["Hikayen","cagadalga","adematiciii","kimsesiz...","kaan.onerx","fastdrivers_","webtekno","faysal_mt","samett.avcii","aykut.sarac","mstffaozcnn"];
+   var profilePicture=["kadir.jpeg","çağatay.jpeg","adem.jpeg","ömer.jpeg","kaan.jpeg","fastdriver.jpeg","webtekno.jpeg","faysal.jpeg","samet.jpeg","aykut.jpeg","mustafa.jpeg"];
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 100,
+              height: 120,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: userName.length,

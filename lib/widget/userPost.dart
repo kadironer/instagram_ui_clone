@@ -45,7 +45,7 @@ class UserPost extends StatelessWidget {
               tooltip: "Seçenekler",
               onPressed:(){
               },
-            )
+            ),
           ],
         ),
         Container(
@@ -97,7 +97,47 @@ class UserPost extends StatelessWidget {
               },
             ),
           ],
+        ),//ikonlar
+        SizedBox(
+          height: 5,
+        ),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: SizedBox(
+                width: 30,
+                height: 30,
+                child: Card(
+                  semanticContainer: true,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  color: Colors.blue,
+                  shape: CircleBorder(
+                      side: BorderSide(
+                        color: Color(0xFFe63946)
+                      ),
+                  ),
+                  child: Image.asset("images/story_image/samet.jpeg"),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 2.0),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                  child: Text("samett.avcii ve 138 diğer kişi",style: TextStyle(fontWeight: FontWeight.bold,color:Color(0xFFe63946) ),),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 3.0),
+              child: Text("beğendi", style: TextStyle(color: Color(0xFFe63946)),),
+            )
+          ],
+        ),
+        SizedBox(
+          height: 50,
         )
+
       ],
     );
     }

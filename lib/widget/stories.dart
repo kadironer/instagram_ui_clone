@@ -16,8 +16,8 @@ class BubleStories extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            width: 60,
-            height: 60,
+            width: 75,
+            height: 75,
             child: Card(
               semanticContainer: true,
               clipBehavior: Clip.antiAliasWithSaveLayer,
