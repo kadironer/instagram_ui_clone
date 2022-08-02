@@ -175,7 +175,7 @@ class UserPost extends StatelessWidget {
               child: Text("2 Temmuz",style: TextStyle(color: Colors.black54),)),
         ),
         SizedBox(
-          height: 50,
+          height: 20,
         )
 
       ],

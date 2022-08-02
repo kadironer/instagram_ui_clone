@@ -56,7 +56,10 @@ class HomeScreen extends StatelessWidget {
 
               ),
             ),
-            UserPost(name: "kadir_oner46",),
+            UserPost(name: "kadir_oner46"),
+            UserPost(name: "kadir_oner46"),
+            UserPost(name: "kadir_oner46"),
+            UserPost(name: "kadir_oner46"),
           ],
         ),
       ),//Story
