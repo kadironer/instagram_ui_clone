@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:like_button/like_button.dart';
 
 class UserPost extends StatelessWidget {
   String name;
@@ -64,11 +65,18 @@ class UserPost extends StatelessWidget {
           children: [
             Row(
               children: [
-                IconButton(
-                  icon: Icon(CupertinoIcons.heart,size: 30,color: Color(0xFFe63946),),
-                  tooltip: "Beğen",
-                  onPressed:(){
-                  },
+                Padding(
+                  padding: const EdgeInsets.only(left: 5.0),
+                  child: LikeButton(
+                    likeBuilder: (bool like){
+                      return Icon(
+                        like ?
+                        CupertinoIcons.heart_fill : CupertinoIcons.heart,
+                        color: Color(0xFFe63946),
+                        size: 30,
+                      );
+                    },
+                  ),
                 ),
                 SizedBox(
                   width: 5,
@@ -104,7 +112,7 @@ class UserPost extends StatelessWidget {
         Row(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 8.0),
+              padding: const EdgeInsets.only(left: 5.0),
               child: SizedBox(
                 width: 30,
                 height: 30,
@@ -133,6 +141,38 @@ class UserPost extends StatelessWidget {
               child: Text("beğendi", style: TextStyle(color: Color(0xFFe63946)),),
             )
           ],
+        ),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0),
+              child: Text("kadir_oner46", style: TextStyle(color: Color(0xFFe63946), fontWeight: FontWeight.bold),),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(left: 3.0),
+              child: Text("Beğenmeyi unutmayın :)", style: TextStyle(color: Color(0xFFe63946)),),
+            )
+          ],
+        ),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0,top: 5.0),
+              child: Text("Yorumlar kapalı.", style: TextStyle(color: Colors.black54),
+            ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 3.0, top: 5.0),
+              child: Text("Kontrolleri gözden geçir.", style: TextStyle(color: Colors.blue.shade300),),
+            ),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 10.0, top: 5.0),
+          child: Align(
+            alignment: Alignment.centerLeft,
+              child: Text("2 Temmuz",style: TextStyle(color: Colors.black54),)),
         ),
         SizedBox(
           height: 50,
