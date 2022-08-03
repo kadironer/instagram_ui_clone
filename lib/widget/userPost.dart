@@ -58,7 +58,7 @@ class UserPost extends StatelessWidget {
               bottom: BorderSide( color: Colors.black26)
             )
           ),
-          child: Image.asset("images/gönderi.jpg", fit: BoxFit.fill,),
+          child: Image.asset("images/post/gönderi.jpg", fit: BoxFit.fill,),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
