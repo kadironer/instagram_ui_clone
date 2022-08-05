@@ -52,10 +52,7 @@ class _SearchPageState extends State<SearchPage> {
           crossAxisCount: 3,
         ),
         itemBuilder: (context, index){
-         return Padding(
-           padding: const EdgeInsets.only(top:40.0),
-           child: SearchGrid(),
-         );
+         return SearchGrid();
         },
       )
     );
