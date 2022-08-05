@@ -17,24 +17,24 @@ class ShopPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Align(
+                const Align(
                     alignment: Alignment.centerLeft,
                     child: Text("Mağaza", style: TextStyle(color: Color(0xFFe63946), fontSize: 25),)),
                 Row(
                   children: [
                     IconButton(
-                      icon: Icon(Icons.calendar_month, color: Color(0xFFe63946), size: 30,),
+                      icon: const Icon(Icons.calendar_month, color: Color(0xFFe63946), size: 30,),
                       onPressed:(){},
                     ),
                     IconButton(
-                      icon: Icon(Icons.menu, color: Color(0xFFe63946), size: 30,),
+                      icon: const Icon(Icons.menu, color: Color(0xFFe63946), size: 30,),
                       onPressed:(){},
                     )
                   ],
                 )
               ],
             ),
-            SizedBox(height: 5,),
+            const SizedBox(height: 5,),
             SizedBox(
               height: 40,
               child: TextField(
@@ -72,7 +72,7 @@ class ShopPage extends StatelessWidget {
             crossAxisCount: 2,
           ),
           itemBuilder: (context, index){
-            return ShopGrid();
+            return const ShopGrid();
           },
         )
     );

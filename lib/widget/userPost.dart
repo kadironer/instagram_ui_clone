@@ -25,7 +25,7 @@ class UserPost extends StatelessWidget {
                      semanticContainer: true,
                      clipBehavior: Clip.antiAliasWithSaveLayer,
                      color: Colors.blue,
-                     shape: CircleBorder(
+                     shape: const CircleBorder(
                          side: BorderSide(
                              color: Color(0xFFe63946),
                              width: 2
@@ -35,14 +35,14 @@ class UserPost extends StatelessWidget {
                    ),
                  ),
                ),
-               SizedBox(
+               const SizedBox(
                  width: 10,
                ),
-               Text(name,style: TextStyle(fontWeight:FontWeight.bold,color: Color(0xFFe63946)),),
+               Text(name,style: const TextStyle(fontWeight:FontWeight.bold,color: Color(0xFFe63946)),),
              ],
            ),
             IconButton(
-              icon: Icon(Icons.more_vert, size: 25,color: Color(0xFFe63946)),
+              icon: const Icon(Icons.more_vert, size: 25,color: Color(0xFFe63946)),
               tooltip: "Seçenekler",
               onPressed:(){
               },
@@ -52,7 +52,7 @@ class UserPost extends StatelessWidget {
         Container(
           width: MediaQuery.of(context).size.width,
           height: 380,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             border: Border(
               top: BorderSide(color: Colors.black26),
               bottom: BorderSide( color: Colors.black26)
@@ -72,26 +72,26 @@ class UserPost extends StatelessWidget {
                       return Icon(
                         like ?
                         CupertinoIcons.heart_fill : CupertinoIcons.heart,
-                        color: Color(0xFFe63946),
+                        color: const Color(0xFFe63946),
                         size: 30,
                       );
                     },
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
                 IconButton(
-                  icon: Icon(CupertinoIcons.chat_bubble_text,size: 28,color: Color(0xFFe63946),),
+                  icon: const Icon(CupertinoIcons.chat_bubble_text,size: 28,color: Color(0xFFe63946),),
                   tooltip: "Yorum Yap",
                   onPressed:(){
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
                 IconButton(
-                  icon: Icon(CupertinoIcons.paperplane,size: 28,color: Color(0xFFe63946),),
+                  icon: const Icon(CupertinoIcons.paperplane,size: 28,color: Color(0xFFe63946),),
                   tooltip: "İlet",
                   onPressed:(){
                   },
@@ -99,14 +99,14 @@ class UserPost extends StatelessWidget {
               ],
             ),
             IconButton(
-              icon: Icon(CupertinoIcons.bookmark,size: 28,color: Color(0xFFe63946),),
+              icon: const Icon(CupertinoIcons.bookmark,size: 28,color: Color(0xFFe63946),),
               tooltip: "Kaydet",
               onPressed:(){
               },
             ),
           ],
         ),//ikonlar
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         Row(
@@ -120,7 +120,7 @@ class UserPost extends StatelessWidget {
                   semanticContainer: true,
                   clipBehavior: Clip.antiAliasWithSaveLayer,
                   color: Colors.blue,
-                  shape: CircleBorder(
+                  shape: const CircleBorder(
                       side: BorderSide(
                         color: Color(0xFFe63946)
                       ),
@@ -129,36 +129,36 @@ class UserPost extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 2.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 2.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                   child: Text("samett.avcii ve 138 diğer kişi",style: TextStyle(fontWeight: FontWeight.bold,color:Color(0xFFe63946) ),),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 3.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 3.0),
               child: Text("beğendi", style: TextStyle(color: Color(0xFFe63946)),),
             )
           ],
         ),
         Row(
-          children: [
+          children: const [
             Padding(
-              padding: const EdgeInsets.only(left: 10.0),
+              padding: EdgeInsets.only(left: 10.0),
               child: Text("kadir_oner46", style: TextStyle(color: Color(0xFFe63946), fontWeight: FontWeight.bold),),
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 3.0),
+              padding: EdgeInsets.only(left: 3.0),
               child: Text("Beğenmeyi unutmayın :)", style: TextStyle(color: Color(0xFFe63946)),),
             )
           ],
         ),
         Row(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0,top: 5.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 10.0,top: 5.0),
               child: Text("Yorumlar kapalı.", style: TextStyle(color: Colors.black54),
             ),
             ),
@@ -168,13 +168,13 @@ class UserPost extends StatelessWidget {
             ),
           ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 10.0, top: 5.0),
+        const Padding(
+          padding: EdgeInsets.only(left: 10.0, top: 5.0),
           child: Align(
             alignment: Alignment.centerLeft,
               child: Text("2 Temmuz",style: TextStyle(color: Colors.black54),)),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         )
 

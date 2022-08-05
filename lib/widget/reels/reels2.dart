@@ -8,7 +8,7 @@ class Reels2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2a9d8f),
+      backgroundColor: const Color(0xFF2a9d8f),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -69,7 +69,6 @@ class Reels2 extends StatelessWidget {
                         height: 30,
                         width: 82,
                         child: ElevatedButton(
-                          child: const Text("Takip Et"),
                           style: ElevatedButton.styleFrom(
                               primary: Colors.transparent,
                               elevation: 0,
@@ -83,6 +82,7 @@ class Reels2 extends StatelessWidget {
                           ),
                           onPressed:(){
                           },
+                          child: const Text("Takip Et"),
                         ),
                       ),
                     ],
@@ -107,7 +107,7 @@ class Reels2 extends StatelessWidget {
               child: Text("Yeni Reels Videom", style: TextStyle(color: Colors.white,)),
             ),
           ),
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           Padding(
             padding: const EdgeInsets.only(left: 7.0,bottom: 10.0),
             child: Row(

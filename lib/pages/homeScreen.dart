@@ -23,19 +23,19 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             tooltip: "Gönderi Ekle",
-            icon: Icon(Icons.add_box_outlined,color:Color(0XFFe63946), size: 30,),
+            icon: const Icon(Icons.add_box_outlined,color:Color(0XFFe63946), size: 30,),
             onPressed:(){
             },
           ),//Add
           IconButton(
             tooltip: "Beğeniler",
-            icon: Icon(CupertinoIcons.heart,color:Color(0XFFe63946), size: 30,),
+            icon: const Icon(CupertinoIcons.heart,color:Color(0XFFe63946), size: 30,),
             onPressed:(){
             },
           ),//Like
           IconButton(
             tooltip: "Mesajlar",
-            icon: Icon(CupertinoIcons.paperplane,color:Color(0XFFe63946), size: 25,),
+            icon: const Icon(CupertinoIcons.paperplane,color:Color(0XFFe63946), size: 25,),
             onPressed:(){
             },
           ),//Message
@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 120,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,

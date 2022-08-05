@@ -14,7 +14,7 @@ class ReelsPage extends StatelessWidget {
     return PageView(
       controller: controller,
       scrollDirection: Axis.vertical,
-      children: [
+      children: const [
         Reels1(),
         Reels2(),
         Reels3(),
